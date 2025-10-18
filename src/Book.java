@@ -2,11 +2,20 @@ public class Book {
     private String title;
     private Author author;
     private int year;
+    private String isbn;
 
     public Book(String title, Author author, int year) {
         this.title = title;
         this.author = author;
         this.year = year;
+        this.isbn = "";
+    }
+
+    public Book(String title, Author author, int year, String isbn) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        this.isbn = isbn;
     }
 
     public String getTitle() {
@@ -33,7 +42,15 @@ public class Book {
         this.year = year;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
     public String getDescription() {
-        return "Title: " + this.getTitle() + " (" + this.getYear() + "), Autor: " + this.author.getInfo();
+        return "Title: " + this.title + " (Year: " + this.year + ", ISBN: " + this.isbn + "), Autor: " + this.author.getInfo();
     }
 }
