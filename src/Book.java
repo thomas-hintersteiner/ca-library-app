@@ -34,6 +34,6 @@ public class Book {
     }
 
     public String getDescription() {
-        return "Title: " + this.getTitle() + ", Autor: " + this.author.getInfo();
+        return "Title: " + this.getTitle() + " (" + this.getYear() + "), Autor: " + this.author.getInfo();
     }
 }
