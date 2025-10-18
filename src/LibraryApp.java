@@ -1,6 +1,8 @@
+import java.util.Date;
+
 public class LibraryApp {
     static void main() {
-        Author authorMax = new Author("Max Mustermann", "max@mustermann.at");
+        Author authorMax = new Author("Max Mustermann", "max@mustermann.at", new Date(2000, 10, 18));
         Author authorRobert = new Author("Robert C. Martin", "unclebob@example.com");
 
         Book javaProfi = new Book("Der Java-Profi", authorMax, 2024);

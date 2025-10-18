@@ -42,6 +42,6 @@ public class Author {
     }
 
     public String getInfo() {
-        return this.name + " (Email: " + this.email + ", Birthdate: " + birthdate.toString();
+        return this.name + " (Email: " + this.email + (birthdate != null ? ", Birthdate: " + birthdate.toString() : "") + ")";
     }
 }
